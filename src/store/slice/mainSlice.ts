@@ -9,7 +9,7 @@ interface Post {
 }
 
 interface PostState {
-  posts: Post[];
+  posts: Post[]|[];
   status: 'idle' | 'loading' | 'succeeded' | 'failed';
   error: string | null;
 }

@@ -9,7 +9,7 @@ import Footer from '../Template/Footer'
 
 function Landing() {
   return (
-    <>
+    <div data-testid='landing-page'>
     <Header/>
     <MainSection/>
     <Powering/>
@@ -17,7 +17,7 @@ function Landing() {
     <Introduction/>
     <Blog/>
     <Footer/>
-    </>
+    </div>
   )
 }
 
