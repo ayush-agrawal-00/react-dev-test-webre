@@ -1,16 +1,15 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosError, AxiosResponse } from 'axios';
 
-const BASE_URL = 'https://jsonplaceholder.typicode.com'; // Replace this with your base API URL
-// const baseURL2 ='https://5b5fc7d84dca409dbe08062a5b973aa2.api.mockbin.io'
+const BASE_URL = 'https://jsonplaceholder.typicode.com';
+const baseURL2 ='https://5b5fc7d84dca409dbe08062a5b973aa2.api.mockbin.io'
 const axiosInstance: AxiosInstance = axios.create({
-  baseURL: BASE_URL,
+  baseURL: window.location.pathname ==='/'?baseURL2:BASE_URL,
 });
 
 // Add a request interceptor
 axiosInstance.interceptors.request.use(
   (config: AxiosRequestConfig):any => {
     // You can modify headers, add tokens, or perform other request modifications here
-    // For example, adding an authorization header:
     // config.headers.Authorization = `Bearer ${yourToken}`;
     return config;
   },
