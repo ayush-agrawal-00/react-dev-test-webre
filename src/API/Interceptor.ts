@@ -1,9 +1,8 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosError, AxiosResponse } from 'axios';
 
-const BASE_URL = 'https://jsonplaceholder.typicode.com';
-const baseURL2 ='https://5b5fc7d84dca409dbe08062a5b973aa2.api.mockbin.io'
+const BASE_URL = 'https://reqres.in/api/';
 const axiosInstance: AxiosInstance = axios.create({
-  baseURL: window.location.pathname ==='/'?baseURL2:BASE_URL,
+  baseURL:BASE_URL,
 });
 
 // Add a request interceptor
