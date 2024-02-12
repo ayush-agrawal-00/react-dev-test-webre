@@ -1,5 +1,4 @@
 # Getting Started with Create React App
-# `For the API CALL press on View ALL POST Button`
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
